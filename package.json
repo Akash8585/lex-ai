@@ -1,0 +1,34 @@
+{
+  "name": "lex-ai",
+  "version": "1.0.0",
+  "description": "AI-powered contract reviewer for AWS Lambda Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build",
+    "deploy:backend": "cd backend && ./deploy.sh",
+    "deploy": "npm run build && npm run deploy:backend",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install",
+    "clean": "cd frontend && rm -rf .next node_modules && cd ../backend && rm -rf node_modules dist",
+    "test": "cd backend && npm test"
+  },
+  "keywords": [
+    "contract-review",
+    "legal-ai",
+    "aws-lambda",
+    "serverless",
+    "artificial-intelligence",
+    "document-analysis",
+    "hackathon"
+  ],
+  "author": "Lex AI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/lex-ai.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+} 
